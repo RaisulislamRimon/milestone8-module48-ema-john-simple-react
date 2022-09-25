@@ -11,6 +11,7 @@ import "./Product.css";
 const Product = (props) => {
   const { id, name, img, seller, price, ratings } = props.product;
   // const handleAddToCart = props.handleAddToCart;
+
   // for broken image error handling - 404 error
   //in your component
   // const  addDefaultSrc => (e) =>{
@@ -39,7 +40,8 @@ const Product = (props) => {
         onError={(e) => {
           // e.currentTarget.src = "your_image_not_found_defalt_picture_here";
           e.currentTarget.src =
-            "https://images.pexels.com/photos/13516347/pexels-photo-13516347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            // "https://images.pexels.com/photos/13516347/pexels-photo-13516347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            "https://images.pexels.com/photos/5981927/pexels-photo-5981927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
         }}
       />
 
