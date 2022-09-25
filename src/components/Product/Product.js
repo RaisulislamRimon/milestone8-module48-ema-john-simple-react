@@ -2,11 +2,11 @@ import React from "react";
 import "./Product.css";
 
 const Product = (props) => {
-  const { name, img, seller, price, stock } = props.product;
+  const { name, img, seller, price, ratings, stock } = props.product;
   return (
     <div className="product">
       <img src={img} alt="" />
-      <h2>{name}</h2>
+      <p className="product-name">{name}</p>
       <p>
         <small>by: {seller}</small>
       </p>
